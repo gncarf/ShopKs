@@ -1,0 +1,345 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Circular Std", Sans-serif;
+}
+
+
+
+ul {
+    list-style-type: none;
+}
+
+section,
+footer {
+    padding: 80px 0px;
+}
+
+.bg-light {
+    background-color: rgba(241, 234, 234, 0.441);
+}
+
+.container {
+    width: 1320px;
+    margin: auto;
+}
+
+.section-title {
+    margin-bottom: 50px;
+    text-align: center;
+    font-family: "Circular Std", Sans-serif;
+}
+
+.section-title p {
+    font-size: 1.25em;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.section-title h2 {
+    color: #009688;
+    font-size: 2.2em;
+}
+
+.section-title h2 span,
+main h1 span {
+    color: lightpink;
+    background-color: lightcyan;
+    border-radius: 5px;
+    padding: 2px 6px;
+}
+
+a.button {
+    color: #555;
+    font-weight: bold;
+    display: inline-block;
+    padding: 12px 18px;
+    border: 1px solid #009688;
+    border-radius: 6px;
+    margin-right: 20px;
+    transition: all .3s ease-in-out;
+    text-decoration: none;
+}
+
+a.button:hover {
+    color: white;
+    background-color: #009688;
+    border-color: #009688;
+}
+
+/* ballina */
+.ballina{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(https://thumbs.dreamstime.com/b/online-shopping-concept-open-laptop-store-icon-buy-payme-payment-business-marketing-digital-network-connection-work-128335516.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 120px;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
+
+.content h1{
+    font-size: 70px;
+    margin-top: 80px;
+}
+
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+span{
+    background: #009688;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.3s;
+}
+
+button:hover span{
+    width: 100%;
+    border: none;
+}
+
+/* elements */
+.elements {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+
+.elements .card {
+    border-radius: 5px;
+    border: 1px solid #e3e3e3;
+    padding: 20px;
+}
+
+.elements .card h3 {
+    color: #009688;
+    font-size: 1.785em;
+    font-weight: 700;
+    line-height: 1.25em;
+}
+
+.elements .card .icons {
+    margin: 20px 0px;
+    font-size: 32px;
+}
+
+.elements .card p {
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+
+
+
+/* Risit */
+.posts {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+}
+
+.post {
+    padding: 40px 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    position: relative;
+    background-color: rgba(241, 234, 234, 0.441);
+}
+
+.post h3 {
+    color: #009688;
+    margin-bottom: 20px;
+}
+
+.post a {
+    color: lightpink;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#risi .actions {
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#risi .actions a.button {
+    color: #009688;
+    border-color: #009688;
+}
+
+#risi .actions a.button:hover {
+    color: white;
+    border-color: #009688;
+    background-color: #009688;
+}
+
+.post img {
+    padding: 5px;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+}
+
+.produktiri {
+    position: absolute;
+    top: 0;
+    left:  0;
+    width: 85px !important;
+}
+/* vlersimet*/ 
+.yje{
+    text-align: center;
+}
+.vlersimi {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+
+.vlersimi .card {
+    padding: 35px 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+}
+
+.vlersimi .card img {
+    display: block;
+    margin: 0px auto 20px auto;
+    border-radius: 50%;
+    width: 100px;
+}
+
+.vlersimi .card h3 {
+    text-align: center;
+    color: #009688;
+}
+.vlersimi .card h4{
+    color: pink;
+    text-align: center;
+}
+.vlersimi .card p {
+    text-align: center;
+    margin: 10px 0px;
+}
+/* Footeri */
+
+
+footer .container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr 1fr;
+    
+}
+
+footer img {
+    width: 280px;
+    display: block;
+    margin-bottom: 30px;
+}
+
+footer p {
+    margin-right: 100px;
+    color: pink;
+}
+
+footer h3 {
+    color: pink;
+    margin-bottom: 20px;
+    margin-top: 0px;
+    text-decoration: none;
+}
+
+footer li {
+    margin-bottom: 10px;
+}
+
+footer a {
+    text-decoration: none;
+    font-family: "Inter", Sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
+footer a:hover {
+    color: #009688;
+}
+
+a {
+    color: lightblue;
+    text-decoration: none;
+}
+
